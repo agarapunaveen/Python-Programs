@@ -1,26 +1,25 @@
 
 
-name: Upload Python Package
+# name: Upload Python Package
 
-on:
-  push
+# on:
+#   push
 
-jobs:
-  echo-triggers:
+# jobs:
+#   echo-triggers:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.12'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install build
-    - name: Build package
-      run: python -m build
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Set up Python
+#       uses: actions/setup-python@v3
+#       with:
+#         python-version: '3.12'
+#     - name: Install dependencies
+#       run: |
+#         python -m pip install --upgrade pip
+#         pip install build
+  
     
     
