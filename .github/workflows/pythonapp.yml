@@ -28,8 +28,6 @@ jobs:
       run: |
         pip install pytest
         # pytest
-    - name: build application
-      run: python -m build
     - uses: actions/upload-artifact@v4.6.0
       with:
        name: build-artifact
